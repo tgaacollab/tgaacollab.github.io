@@ -11,8 +11,8 @@
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(5, minmax(200px, 1fr)) repeat(6, minmax(200px, 1fr));
-  grid-template-rows: repeat(2, 100px);
+  grid-template-columns: repeat(5, minmax(200px, 1fr)) repeat(6, minmax(200px, 1fr)) repeat(5, minmax(200px, 1fr)) repeat(6, minmax(200px, 1fr)) repeat(5, minmax(200px, 1fr));
+  grid-template-rows: repeat(5, 100px);
   grid-gap: 10px; 
 }
 
@@ -34,11 +34,17 @@
   grid-row: 2;
 }
 
-.grid-container > div:nth-child(n+12) {
+.grid-container > div:nth-child(n+12):nth-child(-n+16) {
   grid-row: 3;
 }
 
+.grid-container > div:nth-child(n+17):nth-child(-n+22) {
+  grid-row: 4;
+}
 
+.grid-container > div:nth-child(n+23) {
+  grid-row: 5;
+}
 
     #sample-pic img:hover{
         content:url(sample_b.png);
@@ -54,22 +60,32 @@
 <body>
   <div class="content">
   <div class="grid-container">
-      <div class="grid-item"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/milaza/20211203/20211203195222.png"></div>
-      <div class="grid-item"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/milaza/20211203/20211203195222.png"></div>
-      <div class="grid-item"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/milaza/20211203/20211203195222.png"></div>
-      <div class="grid-item"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/milaza/20211203/20211203195222.png"></div>
-      <div class="grid-item"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/milaza/20211203/20211203195222.png"></div>
-      <div class="grid-item"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/milaza/20211203/20211203195222.png"></div>
-      <div class="grid-item"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/milaza/20211203/20211203195222.png"></div>
-      <div class="grid-item"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/milaza/20211203/20211203195222.png"></div>
-      <div class="grid-item"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/milaza/20211203/20211203195222.png"></div>
-      <div class="grid-item"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/milaza/20211203/20211203195222.png"></div>
-      <div class="grid-item"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/milaza/20211203/20211203195222.png"></div>
-      <div class="grid-item"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/milaza/20211203/20211203195222.png"></div>
-      <div class="grid-item"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/milaza/20211203/20211203195222.png"></div>
-      <div class="grid-item"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/milaza/20211203/20211203195222.png"></div>
-      <div class="grid-item"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/milaza/20211203/20211203195222.png"></div>
-      <div class="grid-item"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/milaza/20211203/20211203195222.png"></div>
+    <div class="grid-item">Test</div>
+    <div class="grid-item">Test</div>
+    <div class="grid-item">Test</div>
+    <div class="grid-item">Test</div>
+    <div class="grid-item">Test</div>
+    <div class="grid-item">Test</div>
+    <div class="grid-item">Test</div>
+    <div class="grid-item">Test</div>
+    <div class="grid-item">Test</div>
+    <div class="grid-item">Test</div>
+    <div class="grid-item">Test</div>
+    <div class="grid-item">Test</div>
+    <div class="grid-item">Test</div>
+    <div class="grid-item">Test</div>
+    <div class="grid-item">Test</div>
+    <div class="grid-item">Test</div>
+    <div class="grid-item">Test</div>
+    <div class="grid-item">Test</div>
+    <div class="grid-item">Test</div>
+    <div class="grid-item">Test</div>
+    <div class="grid-item">Test</div>
+    <div class="grid-item">Test</div>
+    <div class="grid-item">Test</div>
+    <div class="grid-item">Test</div>
+    <div class="grid-item">Test</div>
+    <div class="grid-item">Test</div>
   </div>
 </div>
 
